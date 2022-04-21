@@ -1,0 +1,13 @@
+.user {
+    display: flex;
+}
+@media screen and (min-width: 320px) {
+    .user {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .user {
+        flex-direction: row;
+    }
+}

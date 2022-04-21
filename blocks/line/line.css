@@ -3,11 +3,13 @@
 }
 @media screen and (min-width: 320px) {
     .line {
+        max-width: 320px;
         padding: 31px 0 0 0;
     }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px){
     .line {
-        padding: 40px 0 0 0;
+        max-width: 880px;
+        padding: 41px 0 0 0;
     }
 }

@@ -1,17 +1,19 @@
-.info__about {
+.about {
+    color: rgba(255, 255, 255, 1);
     font-weight: normal;
+    flex-direction: column;
 }
 @media screen and (min-width: 320px) {
-    .info__about {
+    .about {
         font-size: 14px;
         line-height: 17px;
         text-align: center;
     }
 }
 @media screen and (min-width: 1280px) {
-    .info__about {
-        font-size: 18px;
-        line-height: 22px;
+    .about {
+        font-size: 14px;
+        line-height: 17px;
         text-align: left;
     }
 }
