@@ -11,4 +11,4 @@
 * HTML
 * БЭМ
 * ООП
-[Ссылка на проект] (https://awesomemarrie.github.io/mesto/)
+[Ссылка на проект] (https://awesomemarrie.github.io/mesto/) или (https://awesomemarrie.github.io/mesto/index.html)

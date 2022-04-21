@@ -1,8 +1,19 @@
 .page {
-    position: relative;
+    position: flex;
     max-width: 1280px;
     margin: auto;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
     background-color: rgba(0, 0, 0, 1);
+    justify-content: center;
+}
+@media screen and (min-width: 320px) {
+    .page {
+        margin: auto 19px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .page {
+        margin: auto 200px;
+    }
 }
