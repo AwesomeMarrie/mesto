@@ -1,5 +1,5 @@
 .header {
-    display: flex;
+    display: relative;
     margin: auto;
 }
 @media screen and (min-width: 320px) {
@@ -7,7 +7,6 @@
         margin: 28px 0 0 0;
         max-width: 320px;
         max-height: 56px;
-        justify-content: left;
     }
 }
 @media screen and (min-width: 1280px){
@@ -15,6 +14,5 @@
         max-width: 880px;
         max-height: 74px;
         margin: 45px 200px 0 200px;
-        justify-self: center;
     }
 }
