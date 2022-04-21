@@ -1,0 +1,17 @@
+.info__about {
+    font-weight: normal;
+}
+@media screen and (min-width: 320px) {
+    .info__about {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .info__about {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+    }
+}
