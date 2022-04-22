@@ -15,5 +15,9 @@
 @import url(../blocks/user/__button_edit/user__button_edit-image.css);
 @import url(../blocks/button/__add/button__add.css);
 @import url(../blocks/photo/photo.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/tile/tile.css);
+@import url(../blocks/tile/__name/tile__name.css);
+@import url(../blocks/tile/__button/tile__button.css);
 
 @import url(../vendor/font/inter.css);
