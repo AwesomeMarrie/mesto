@@ -1,0 +1,17 @@
+.button__add {
+    height: 50px;
+    padding: 0;
+    border: 1px solid #fff;
+}
+@media screen and (min-width: 320px) {
+    .button__add {
+        max-width: 282px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .button__add {
+        width: 150px;
+        margin-left: 242px;
+        align-self: center;
+    }
+}

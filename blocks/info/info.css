@@ -2,3 +2,13 @@
     display: flex;
     flex-direction: column;
 }
+@media screen and (min-width: 320px) {
+    .info {
+        margin: 26px auto 36px auto;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .info {
+        margin: auto 0 auto 32px;
+    }
+}

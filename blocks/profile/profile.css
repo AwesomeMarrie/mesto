@@ -4,11 +4,13 @@
 @media screen and (min-width: 320px) {
     .profile {
         margin: 0 19px;
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 1280px) {
     .profile {
         margin: 40px 0;
         justify-self: start;
+        flex-direction: row;
     }
 }
