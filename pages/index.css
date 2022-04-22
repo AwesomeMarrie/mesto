@@ -20,5 +20,7 @@
 @import url(../blocks/tile/tile.css);
 @import url(../blocks/tile/__name/tile__name.css);
 @import url(../blocks/tile/__button/tile__button.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);
 
 @import url(../vendor/font/inter.css);
