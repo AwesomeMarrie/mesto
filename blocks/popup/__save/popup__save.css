@@ -2,7 +2,7 @@
     background-color: black;
     align-self: center;
     border: none;
-    padding: 0;
+    padding: 14px 0;
     border-radius: 5%;
 }
 .popup__save:hover {
