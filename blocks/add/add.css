@@ -1,19 +1,19 @@
-.button__add {
+.add {
     height: 50px;
     padding: 0;
     border: 1px solid #fff;
     background-color: rgba(0, 0, 0, 1);
 }
-.button__add:hover {
+.add:hover {
     opacity: 60%;
 }
 @media screen and (min-width: 320px) {
-    .button__add {
+    .add {
         max-width: 282px;
     }
 }
 @media screen and (min-width: 1280px) {
-    .button__add {
+    .add {
         width: 150px;
         margin-left: 242px;
         align-self: center;

@@ -1,7 +1,7 @@
 @import url(../vendor/normalize.css);
 
 @import url(../blocks/avatar/avatar.css);
-@import url(../blocks/button/__add/button__add.css);
+@import url(../blocks/add/add.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/card/card.css);
 @import url(../blocks/footer/__text/footer__text.css);
