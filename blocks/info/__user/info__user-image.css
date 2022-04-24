@@ -1,11 +1,11 @@
 @media screen and (min-width: 320px) {
-    .user__button_edit-image {
+    .info__user-image {
         max-width: 18px;
         max-height: 18px;
     }
 }
 @media screen and (min-width: 1280px) {
-    .user__button_edit-image {
+    .info__user-image {
         max-width: 24px;
         max-height: 24px;
     }

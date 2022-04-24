@@ -1,0 +1,22 @@
+.popup__save {
+    background-color: black;
+    align-self: center;
+    border: none;
+    padding: 0;
+    border-radius: 5%;
+}
+.popup__save:hover {
+    opacity: 0.8;
+}
+@media screen and (min-width: 320px) {
+    .popup__save {
+        width: 238px;
+        margin: 45px 22px 37px 22px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .popup__save {
+        width: 358px;
+        margin: 48px 36px 25px 36px;
+    }
+}

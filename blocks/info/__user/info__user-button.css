@@ -1,8 +1,8 @@
-.user__button_edit {
+.info__user-button {
     background-color: rgba(0, 0, 0, 1);
 }
 @media screen and (min-width: 320px) {
-    .user__button_edit {
+    .info__user-button {
         max-width: 18px;
         max-height: 18px;
         padding: 0;
@@ -11,7 +11,7 @@
     }
 }
 @media screen and (min-width: 1280px) {
-    .user__button_edit {
+    .info__user-button {
         max-width: 24px;
         max-height: 26px;
         padding: 0;

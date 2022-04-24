@@ -1,0 +1,21 @@
+.popup__about {
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+}
+.popup__about:focus {
+    outline: none
+}
+@media screen and (min-width: 320px) {
+    .popup__about {
+        max-width: 238px;
+        margin: 30px 22px auto 22px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .popup__about {
+        max-width: 358px;
+        margin: 30px 36px auto 36px;
+    }
+}
