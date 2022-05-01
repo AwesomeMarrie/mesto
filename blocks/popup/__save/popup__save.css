@@ -3,7 +3,11 @@
     align-self: center;
     border: none;
     padding: 14px 0;
-    border-radius: 5%;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-weight: 400;
 }
 .popup__save:hover {
     opacity: 0.8;
@@ -12,11 +16,15 @@
     .popup__save {
         width: 238px;
         margin: 45px 22px 37px 22px;
+        font-size: 14px;
+        line-height: 17px;
     }
 }
 @media screen and (min-width: 1280px) {
     .popup__save {
         width: 358px;
         margin: 48px 36px 25px 36px;
+        font-size: 18px;
+        line-height: 22px;
     }
 }

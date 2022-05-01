@@ -1,0 +1,11 @@
+.card__tile_button {
+    background-color: #fff;
+    justify-self: right;
+    margin-right: 20px;
+    margin-left: auto;
+    max-width: 22px;
+    max-height: 19px;
+    align-self: center;
+    padding: 0;
+    cursor: pointer;
+}

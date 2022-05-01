@@ -1,28 +1,27 @@
-let openPopUp = document.querySelector('.info__user-button');
+let openPopUp = document.querySelector('.profile__info_user-button');
 let popUp = document.querySelector('.popup__container');
 let closePopUp = document.querySelector('.popup__close');
-let savePopUp = document.querySelector('.popup__save');
-let userName = document.querySelector('.info__user-name');
-let userInfo = document.querySelector('.info__about');
+let userName = document.querySelector('.profile__info_user-name');
+let userInfo = document.querySelector('.profile__info_about');
 let backGround = document.querySelector('.popup');
+let nameChange = document.querySelector('.popup__input_name');
+let infoChange = document.querySelector('.popup__input_about');
 
-
-openPopUp.addEventListener('click', function(e) {
-    e.preventDefault();
-   // popUp.classList.toggle('popup_opened');
-    backGround.classList.toggle('popup_opened');
-})
-closePopUp.addEventListener('click', function(e) {
-    e.preventDefault();
-    //popUp.classList.toggle('popup_opened');
-    backGround.classList.toggle('popup_opened');
-})
-function newName() {
-    let nameChange = document.querySelector('.popup__name').value;
-    userName.textContent = nameChange;
-    let infoChange = document.querySelector('.popup__about').value;
-    userInfo.textContent = infoChange;
-    //popUp.classList.toggle('popup_opened');
-    backGround.classList.toggle('popup_opened');
+function open() {
+    if (backGround.classList.contains('popup_opened')) {
+        backGround.classList.remove('popup_opened');
+    }else {
+        backGround.classList.add('popup_opened');
+    }
 }
-savePopUp.addEventListener('click', newName);
+
+openPopUp.addEventListener('click', open);
+closePopUp.addEventListener('click', open);
+
+function newName(evt) {
+    userName.textContent = nameChange.value;
+    userInfo.textContent = infoChange.value;
+    backGround.classList.remove('popup_opened');
+    evt.preventDefault();
+}
+popUp.addEventListener('submit', newName);

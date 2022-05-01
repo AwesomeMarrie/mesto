@@ -1,0 +1,7 @@
+.card__tile {
+    display: flex;
+    flex-direction: row;
+    max-width: 246px;
+    margin: auto;
+
+}
