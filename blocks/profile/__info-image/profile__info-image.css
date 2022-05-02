@@ -1,12 +1,12 @@
 @media screen and (min-width: 320px) {
     .profile__info-image {
-        max-width: 18px;
-        max-height: 18px;
+        width: 18px;
+        height: 18px;
     }
 }
 @media screen and (min-width: 1280px) {
     .profile__info-image {
-        max-width: 24px;
-        max-height: 26px;
+        width: 24px;
+        height: 26px;
     }
 }
