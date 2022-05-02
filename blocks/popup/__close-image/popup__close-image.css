@@ -3,8 +3,8 @@
 }
 @media screen and (min-width: 320px){
     .popup__close-image {
-        max-width: 20px;
-        max-height: 20px;
+        width: 20px;
+        height: 20px;
         top: -24px;
         left: 259px;
     }
@@ -12,9 +12,8 @@
  
 @media screen and (min-width: 1280px) {
     .popup__close-image {
-        max-width: 32px;
-        max-height: 32px;
-        position: absolute;
+        width: 32px;
+        height: 32px;
         top: -28px;
         left: 438px;
     }

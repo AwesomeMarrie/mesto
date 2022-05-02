@@ -1,5 +1,6 @@
 .footer__text {
     color: rgba(84, 84, 84, 1);
+    margin: 0;
 }
 @media screen and (min-width: 320px) {
     .footer__text {
