@@ -21,6 +21,8 @@
     .profile__info-about {
         max-width: 336px;
         font-size: 18px;
+        margin-left: 0;
+        margin-top: 18px;
         line-height: 22px;
         text-align: left;
     }

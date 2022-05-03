@@ -7,11 +7,10 @@ let backGround = document.querySelector('.popup');
 let nameChange = document.querySelector('.popup__input_name_change');
 let infoChange = document.querySelector('.popup__input_about_change');
 
-function open(event) {
+function open() {
     backGround.classList.add('popup_opened');
     nameChange.value = userName.textContent;
     infoChange.value = userInfo.textContent;
-    event.preventDefault();
 }
 function close() {
     backGround.classList.remove('popup_opened');
@@ -22,7 +21,7 @@ closePopUp.addEventListener('click', close);
 function newName(evt) {
     userName.textContent = nameChange.value;
     userInfo.textContent = infoChange.value;
+    close();
     evt.preventDefault();
 }
 popUp.addEventListener('submit', newName);
-popUp.addEventListener('submit', close);
