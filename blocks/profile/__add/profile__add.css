@@ -18,7 +18,7 @@
 @media screen and (min-width: 1280px) {
     .profile__add {
         width: 150px;
-        margin-left: 242px;
+        margin: 35px 0 35px 242px;
         align-self: center;
     }
 }
