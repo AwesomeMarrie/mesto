@@ -14,7 +14,7 @@
     .photo {
         grid-template-columns: repeat(3, 282px);
         grid-template-rows: repeat(2, 361px);
-        gap: 17px 20px;
+        gap: 22px 18px;
         margin: 40px auto auto auto;
         max-width: 880px;
     }
