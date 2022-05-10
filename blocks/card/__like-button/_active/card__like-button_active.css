@@ -1,12 +1,12 @@
-.card__tile-button_active {
+.card__like-button_active {
     background-color: #fff;
     justify-self: right;
     margin-right: 0px;
     margin-left: auto;
-    max-width: 22px;
-    max-height: 19px;
+    width: 27px;
+    height: 19px;
     align-self: center;
     padding: 0;
     cursor: pointer;
-    background: url(../../../../image/heart_active.svg);
+    background: url(../../../../image/heart_active.svg) no-repeat;
 }

@@ -4,9 +4,10 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/card/__tile-name/card__tile-name.css);
 @import url(../blocks/card/__tile/card__tile.css);
-@import url(../blocks/card/__tile-button/card__tile-button.css);
-@import url(../blocks/card/__tile-button/_active/card__tile-button_active.css);
+@import url(../blocks/card/__like-button/card__like-button.css);
+@import url(../blocks/card/__like-button/_active/card__like-button_active.css);
 @import url(../blocks/card/card.css);
+@import url(../blocks/card/__delete-button/card__delete-button.css);
 @import url(../blocks/card/__image/card__image.css);
 @import url(../blocks/footer/__text/footer__text.css);
 @import url(../blocks/footer/footer.css);

@@ -56,11 +56,16 @@ const initialCards = [
     link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
 ];
-initialCards.forEach(function newCard(element) {
+function newCard(element) {
   const editCard = templateCard.cloneNode(true);
   editCard.querySelector('.card__tile-name').textContent = element.name;
   editCard.querySelector('.card__image').src = element.link;
+//like
+  editCard.querySelector('.card__like-button')
+  .addEventListener('click', (like) => like.target.classList.toggle('card__like-button_active'));
 
-  containerCard.append(editCard);
-  return editCard
-});
+  return editCard;
+}
+initialCards.forEach((element) => {
+  containerCard.append(newCard(element));
+})
