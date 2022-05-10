@@ -57,12 +57,16 @@ const initialCards = [
   }
 ];
 function newCard(element) {
+  //photo and name
   const editCard = templateCard.cloneNode(true);
   editCard.querySelector('.card__tile-name').textContent = element.name;
   editCard.querySelector('.card__image').src = element.link;
 //like
   editCard.querySelector('.card__like-button')
   .addEventListener('click', (like) => like.target.classList.toggle('card__like-button_active'));
+//delete
+  editCard.querySelector('.card__delete-button')
+  .addEventListener('click', (del) => del.target.parentElement.remove());
 
   return editCard;
 }
