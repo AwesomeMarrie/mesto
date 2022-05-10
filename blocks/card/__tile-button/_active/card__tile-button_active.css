@@ -1,4 +1,4 @@
-.card__tile-button {
+.card__tile-button_active {
     background-color: #fff;
     justify-self: right;
     margin-right: 0px;
@@ -8,5 +8,5 @@
     align-self: center;
     padding: 0;
     cursor: pointer;
-    background: url(../../../image/heart.svg);
+    background: url(../../../../image/heart_active.svg);
 }
