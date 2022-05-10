@@ -57,7 +57,7 @@ const initialCards = [
   }
 ];
 function newCard(element) {
-  //photo and name
+//photo and name
   const editCard = templateCard.cloneNode(true);
   editCard.querySelector('.card__tile-name').textContent = element.name;
   editCard.querySelector('.card__image').src = element.link;
@@ -65,8 +65,10 @@ function newCard(element) {
   editCard.querySelector('.card__like-button')
   .addEventListener('click', (like) => like.target.classList.toggle('card__like-button_active'));
 //delete
-  editCard.querySelector('.card__delete-button')
-  .addEventListener('click', (del) => del.target.parentElement.remove());
+  const delteButton = editCard.querySelector('.card__delete-button');
+  delteButton.addEventListener('click', function(del) { 
+    del.target.parentElement.remove()
+  });
 
   return editCard;
 }
