@@ -1,0 +1,22 @@
+.popup-location__close {
+    color: white;
+    padding: 0;
+    border: none;
+    background: none;
+    position: relative;
+    cursor: pointer;
+}
+.popup-location__close:hover {
+    opacity: 0.6;
+}
+@media screen and (min-width: 320px){
+    .popup-location__close {
+        top: -28px;
+    }
+}
+ 
+@media screen and (min-width: 1280px) {
+   .popup-location__close {
+       top: -29px;
+   }
+}

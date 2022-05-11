@@ -1,0 +1,19 @@
+.popup-photo__edit {
+    font-weight: bold;
+    color: #000;
+}
+@media screen and (min-width: 320px){
+    .popup-photo__edit {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 5px 22px 62px 23px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .popup-photo__edit {
+        font-size: 24px;
+        line-height: 29px;
+        margin: 19px 64px 23px 36px;
+    }
+}
