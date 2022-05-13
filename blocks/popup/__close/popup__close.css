@@ -5,6 +5,7 @@
     background: none;
     position: relative;
     cursor: pointer;
+    opacity: 1;
 }
 .popup__close:hover {
     opacity: 0.6;

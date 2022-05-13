@@ -29,7 +29,7 @@
             <template id = "card">
                 <article class="card">
                     <button class="button card__delete-button" type="button"></button>
-                    <img class="card__image" alt="Фото_мест">
+                    <img class="card__image" alt="Фото_мест" src="#">
                     <div class="card__tile">
                         <h2 class="card__tile-name"></h2>
                         <button class="button card__like-button" type="button"></button>
@@ -58,7 +58,7 @@
     <div class="popup-photo">
         <article class="popup-photo__container">
             <form class="popup-photo__container-form" name="photo">
-                <button class="button popup-photo__close" type="button"><img class="popup-photo__close-image" src="./image/Close_Icon.svg" alt="закрыть"></button>
+                <button class="button popup-photo__close popup__close" type="button"><img class="popup-photo__close-image" src="./image/Close_Icon.svg" alt="закрыть"></button>
                 <h2 class="popup-photo__edit"> Новое место</h2>
                 <input class="popup-photo__input popup-photo__input_name_change" type="text" name="name" placeholder="Название">
                 <input class="popup-photo__input popup-photo__input_about_change" type="text" name="link" placeholder="Ссылка на картинку">
@@ -66,12 +66,13 @@
             </form>
         </article>
     </div>
+    
     <div class="popup-location">
         <article class="popup-location__container">
             <form class="popup-location__container-form" name="photo"></form>
                 <button class="button popup-locaton__close" type="button"><img class="popup-photo__close-image" src="./image/Close_Icon.svg" alt="закрыть"></button>
-                <img class="popup-location__photo" alt="фото">
-                <h3 class="popup-location__name"></h3>
+                <img class="popup-location__photo" alt="фото" src="#">
+                <figcaption class="popup-location__name"></figcaption>
             </form>
         </article>
     </div>

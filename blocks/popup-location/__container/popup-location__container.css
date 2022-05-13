@@ -1,7 +1,8 @@
 .popup-location__container {
-    max-height: 75vh;
-    max-width: 75vw;
-    align-content: center;
-    margin: auto;
-    display: flex;
+  height: 75vh;
+  width: 75vw;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
 }
