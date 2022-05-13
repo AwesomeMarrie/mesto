@@ -41,7 +41,7 @@ const imageBackground = document.querySelector(
 const popUpImageContainer = document.querySelector(".popup-location");
 const popUpImage = document.querySelector(".popup-location__photo");
 const popUpNameImage = document.querySelector(".popup-location__name");
-const popUpImageClose = document.querySelector(".popup-locaton__close");
+const popUpImageClose = document.querySelector(".popup-location__close");
 //cardMassive
 const initialCards = [
   {
