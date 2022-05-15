@@ -1,18 +1,21 @@
+.popup-location__photo {
+  display: flex;
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  object-fit: contain;
+  max-width: 75vw;
+  max-height: 75vh;
+}
 @media screen and (min-width: 320px) {
   .popup-location__photo {
-    width: 240px;
-    height: 299px;
-    display: flex;
-    position: fixed;
-    align-self: center;
-    justify-self: center;
-    margin: auto;
+    min-height: 299px;
   }
 }
 @media screen and (min-width: 1280px) {
   .popup-location__photo {
-    width: 816px;
-    height: 540px;
-    margin: auto;
+    min-height: 562px;
+    min-width: 433px;
   }
 }
