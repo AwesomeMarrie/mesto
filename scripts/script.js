@@ -83,7 +83,6 @@ function createNewCard(element) {
   const editCard = templateCard.cloneNode(true);
   editCard.querySelector(".card__tile-name").textContent = element.name;
   editCard.querySelector(".card__image").src = element.link;
-  editCard.querySelector(".card__tile-name").alt = element.name;
   //like
   const likeButton = editCard.querySelector(".card__like-button");
   likeButton.addEventListener("click", likeCard);
@@ -96,7 +95,6 @@ function createNewCard(element) {
     popUpImageContainer.classList.add("popup_opened");
     popUpImage.src = element.link;
     popUpNameImage.textContent = element.name;
-    popUpImage.alt = element.name;
   }
   openContainerCard.addEventListener("click", openBigImage);
 
@@ -113,7 +111,7 @@ initialCards.forEach((element) => {
 });
 //addPhotoPopUp
 const addPhoto = document.querySelector(".profile__add");
-const popUpPhoto = document.querySelector(".popup-photo__container-form");
+const popUpPhoto = document.querySelector(".popup-photo__container");
 const closePopUpPhoto = document.querySelector(".popup-photo__close");
 const popUpFormPhoto = document.querySelector(".popup-photo");
 
@@ -143,7 +141,6 @@ function addCard(nameValue, linkValue) {
     popUpImageContainer.classList.add("popup_opened");
     popUpImage.src = linkValue;
     popUpNameImage.textContent = nameValue;
-    popUpNameImage.alt = nameValue;
   }
 }
 
