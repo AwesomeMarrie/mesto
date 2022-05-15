@@ -1,12 +1,12 @@
 //popUpEdit
-let openPopUp = document.querySelector(".profile__info-button");
-let popUp = document.querySelector(".popup__container-form");
-let closePopUp = document.querySelector(".popup__close");
-let userName = document.querySelector(".profile__info-name");
-let userInfo = document.querySelector(".profile__info-about");
-let popUpForm = document.querySelector(".popup");
-let nameChange = document.querySelector(".popup__input_name_change");
-let infoChange = document.querySelector(".popup__input_about_change");
+const openPopUp = document.querySelector(".profile__info-button");
+const popUp = document.querySelector(".popup__container-form");
+const closePopUp = document.querySelector(".popup__close");
+const userName = document.querySelector(".profile__info-name");
+const userInfo = document.querySelector(".profile__info-about");
+const popUpForm = document.querySelector(".popup");
+const nameChange = document.querySelector(".popup__input_name_change");
+const infoChange = document.querySelector(".popup__input_about_change");
 
 function open() {
   popUpForm.classList.add("popup_opened");
@@ -83,6 +83,7 @@ function createNewCard(element) {
   const editCard = templateCard.cloneNode(true);
   editCard.querySelector(".card__tile-name").textContent = element.name;
   editCard.querySelector(".card__image").src = element.link;
+  editCard.querySelector(".card__tile-name").alt = element.name;
   //like
   const likeButton = editCard.querySelector(".card__like-button");
   likeButton.addEventListener("click", likeCard);
@@ -95,6 +96,7 @@ function createNewCard(element) {
     popUpImageContainer.classList.add("popup_opened");
     popUpImage.src = element.link;
     popUpNameImage.textContent = element.name;
+    popUpImage.alt = element.name;
   }
   openContainerCard.addEventListener("click", openBigImage);
 
@@ -110,10 +112,10 @@ initialCards.forEach((element) => {
   containerCard.append(createNewCard(element));
 });
 //addPhotoPopUp
-let addPhoto = document.querySelector(".profile__add");
-let popUpPhoto = document.querySelector(".popup-photo__container-form");
-let closePopUpPhoto = document.querySelector(".popup-photo__close");
-let popUpFormPhoto = document.querySelector(".popup-photo");
+const addPhoto = document.querySelector(".profile__add");
+const popUpPhoto = document.querySelector(".popup-photo__container-form");
+const closePopUpPhoto = document.querySelector(".popup-photo__close");
+const popUpFormPhoto = document.querySelector(".popup-photo");
 
 function addCard(nameValue, linkValue) {
   const mainCard = document.createElement("article");
@@ -141,6 +143,7 @@ function addCard(nameValue, linkValue) {
     popUpImageContainer.classList.add("popup_opened");
     popUpImage.src = linkValue;
     popUpNameImage.textContent = nameValue;
+    popUpNameImage.alt = nameValue;
   }
 }
 
