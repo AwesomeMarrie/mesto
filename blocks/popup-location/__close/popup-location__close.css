@@ -11,15 +11,14 @@
 }
 @media screen and (min-width: 320px) {
   .popup-location__close {
-    top: -176px;
-    left: 115px;
+    top: -34px;
+    right: 20px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .popup-location__close {
-    top: -39px;
-    left: 415px;
-    right: 0;
+    top: -40px;
+    right: -5px;
   }
 }
