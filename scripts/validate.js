@@ -21,7 +21,7 @@ function hideError(input) {
 }
 
 function enableValidation(form) {
-  const inputs = Array.from(form.querySelectorAll(".popup__input"));
+  const inputs = Array.from(form.querySelectorAll("#popup__input"));
 
   inputs.forEach((input) => {
     input.addEventListener("input", () => setInputValidity(input, form));
