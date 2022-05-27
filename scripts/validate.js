@@ -1,13 +1,4 @@
 //validation
-//const validOption = {
-//formSelector: "form__container",
-//inputSelector: "popup__input",
-//submitButtonSelector: "popup__save",
-//inactiveButtonClass: "popup__button_disabled",
-//nputErrorClass: "popup__input_type_error",
-//errorClass: "popup__input-error_active",
-//};
-
 const editProfileForm = document.forms["get-profile"];
 const addPhotoForm = document.forms["get-place"];
 const saveButtonEdit = document.getElementById("button__save_edit");
