@@ -1,0 +1,26 @@
+.button__disabled {
+  opacity: 20%;
+  align-self: center;
+  border: 1px rgba(0, 0, 0, 1);
+  padding: 14px 0;
+  border-radius: 2px;
+  text-align: center;
+  pointer-events: none;
+  font-weight: 400;
+}
+@media screen and (min-width: 320px) {
+  .button__disabled {
+    width: 238px;
+    margin: 29px 22px 29px 23px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button__disabled {
+    width: 358px;
+    margin: 42px 36px 36px 36px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,25 @@
+.popup__input-error {
+  display: none;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  margin: 0;
+  margin-left: 22px;
+  border-top: 1px solid #ff0000;
+}
+@media screen and (min-width: 320px) {
+  .popup__input-error {
+    width: 238px;
+    top: -10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .popup__input-error {
+    width: 358px;
+    top: -5px;
+    margin-left: 38px;
+  }
+}
