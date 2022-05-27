@@ -36,7 +36,19 @@ const closePopupEscape = (evt) => {
 
 //close popup by overlay
 const closePopupOverlay = (event) => {
-  if (event.target.classList.contains("popup__form")) {
+  if (event.target.classList.contains("card")) {
+    const popupOverlay = document.querySelector(".popup_opened");
+    closePopup(popupOverlay);
+  }
+  if (event.target.classList.contains("popup")) {
+    const popupOverlay = document.querySelector(".popup_opened");
+    closePopup(popupOverlay);
+  }
+  if (event.target.classList.contains("popup-photo")) {
+    const popupOverlay = document.querySelector(".popup_opened");
+    closePopup(popupOverlay);
+  }
+  if (event.target.classList.contains("popup-location")) {
     const popupOverlay = document.querySelector(".popup_opened");
     closePopup(popupOverlay);
   }
