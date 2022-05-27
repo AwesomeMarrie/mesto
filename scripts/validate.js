@@ -5,7 +5,7 @@ const saveButtonEdit = document.getElementById("button__save_edit");
 const saveButtonPlace = document.getElementById("button__save_place");
 
 function showError(input, errorMessage) {
-  const fieldset = input.closest(".form__fieldset");
+  const fieldset = input.closest(".form");
   const errorBlock = fieldset.querySelector(".popup__input-error");
 
   errorBlock.textContent = errorMessage;
@@ -13,7 +13,7 @@ function showError(input, errorMessage) {
 }
 
 function hideError(input) {
-  const fieldset = input.closest(".form__fieldset");
+  const fieldset = input.closest(".form");
   const errorBlock = fieldset.querySelector(".popup__input-error");
 
   errorBlock.textContent = "";
