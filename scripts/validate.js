@@ -6,18 +6,18 @@ const saveButtonPlace = document.getElementById("button__save_place");
 
 function showError(input, errorMessage) {
   const fieldset = input.closest(".form");
-  const errorBlock = fieldset.querySelector(".popup__input-error");
+  const errorBlock = fieldset.querySelector(".form__input-error");
 
   errorBlock.textContent = errorMessage;
-  errorBlock.classList.add("popup__input-error_active");
+  errorBlock.classList.add("form__input-error_active");
 }
 
 function hideError(input) {
   const fieldset = input.closest(".form");
-  const errorBlock = fieldset.querySelector(".popup__input-error");
+  const errorBlock = fieldset.querySelector(".form__input-error");
 
   errorBlock.textContent = "";
-  errorBlock.classList.remove("popup__input-error_active");
+  errorBlock.classList.remove("form__input-error_active");
 }
 
 function enableValidation(form) {
