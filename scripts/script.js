@@ -7,8 +7,8 @@ const buttonClosePopupProfileEdit = document.querySelector(".popup__close");
 const userName = document.querySelector(".profile__info-name");
 const userInfo = document.querySelector(".profile__info-about");
 const popupProfileEdit = document.querySelector(".popup");
-const nameChange = document.querySelector(".popup__input_name");
-const infoChange = document.querySelector(".popup__input_title");
+const nameChange = document.querySelector(".form__input-name");
+const infoChange = document.querySelector(".form__input-title");
 
 //open popup
 function openPopup(popup) {
@@ -145,8 +145,8 @@ const popupAddCard = document.querySelector(".popup-photo");
 function addNewPhoto(evt) {
   closePopup(popupAddCard);
   evt.preventDefault();
-  const name = document.querySelector(".popup__input_name");
-  const link = document.querySelector(".popup__input_title");
+  const name = document.querySelector(".form__input-name");
+  const link = document.querySelector(".form__input-title");
   const newCard = createCard({ name: name.value, link: link.value });
   containerCard.prepend(newCard);
   name.value = "";
