@@ -21,7 +21,7 @@ function hideError(input) {
 }
 
 function enableValidation(form) {
-  const inputs = Array.from(form.querySelectorAll("#popup__input"));
+  const inputs = Array.from(form.querySelectorAll("input"));
 
   inputs.forEach((input) => {
     input.addEventListener("input", () => setInputValidity(input, form));
@@ -39,7 +39,7 @@ function checkBlockButton(form) {
     saveButtonPlace.classList.remove("popup__save");
     saveButtonPlace.classList.add("button__disabled");
 
-    const inputs = Array.from(form.querySelectorAll("popup__input"));
+    const inputs = Array.from(form.querySelectorAll("input"));
 
     inputs.forEach((input) => {
       setInputValidity(input, form);
