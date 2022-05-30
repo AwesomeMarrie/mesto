@@ -3,7 +3,7 @@ const buttonOpenPopupProfileEdit = document.querySelector(
   ".profile__info-button"
 );
 const formProfileEdit = document.querySelector(".popup__container-form");
-const buttonClosePopupProfileEdit = document.querySelector(".popup__close");
+const buttonClosePopup = document.querySelector(".popup__close");
 const userName = document.querySelector(".profile__info-name");
 const userInfo = document.querySelector(".profile__info-about");
 const popupProfileEdit = document.querySelector(".popup");
@@ -19,7 +19,7 @@ function openPopup(popup) {
   saveButtonPlace.classList.add("button__disabled");
 }
 
-//close by button
+//close popup
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
   document.removeEventListener("keydown", closePopupEscape);
@@ -44,14 +44,14 @@ const closePopupOverlay = (event) => {
     const popupOverlay = document.querySelector(".popup_opened");
     closePopup(popupOverlay);
   }
-  if (event.target.classList.contains("popup-photo")) {
-    const popupOverlay = document.querySelector(".popup_opened");
-    closePopup(popupOverlay);
-  }
-  if (event.target.classList.contains("popup-location")) {
-    const popupOverlay = document.querySelector(".popup_opened");
-    closePopup(popupOverlay);
-  }
+  //if (event.target.classList.contains("popup-photo")) {
+  //const popupOverlay = document.querySelector(".popup_opened");
+  //closePopup(popupOverlay);
+  // }
+  //if (event.target.classList.contains("popup-location")) {
+  //const popupOverlay = document.querySelector(".popup_opened");
+  //closePopup(popupOverlay);
+  //}
 };
 
 //function for opening popup edit and filling form
@@ -65,7 +65,7 @@ function openPopupEditProfile() {
 buttonOpenPopupProfileEdit.addEventListener("click", openPopupEditProfile);
 
 //close popup edit by button
-buttonClosePopupProfileEdit.addEventListener("click", function () {
+buttonClosePopup.addEventListener("click", function () {
   closePopup(popupProfileEdit);
 });
 

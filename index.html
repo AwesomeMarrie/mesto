@@ -61,7 +61,11 @@
 
     <div class="popup">
       <article class="popup__container">
-        <form class="popup__container-form" name="get-profile" novalidate>
+        <form
+          class="popup__form popup__container-form"
+          name="get-profile"
+          novalidate
+        >
           <button class="button popup__close" type="button">
             <img
               class="popup__close-image"
@@ -69,7 +73,7 @@
               alt="закрыть"
             />
           </button>
-          <h2 class="popup__edit">Редактировать профиль</h2>
+          <h2 class="popup__name">Редактировать профиль</h2>
           <fieldset class="form">
             <input
               class="form__input-name input"
@@ -101,17 +105,21 @@
       </article>
     </div>
 
-    <div class="popup-photo">
+    <div class="popup popup-photo">
       <article class="popup-photo__container">
-        <form class="popup-photo__container-form" name="get-place" novalidate>
-          <button class="button popup-photo__close" type="button">
+        <form
+          class="popup__form popup-photo__container-form"
+          name="get-place"
+          novalidate
+        >
+          <button class="button popup__close popup-photo__close" type="button">
             <img
               class="popup-photo__close-image"
               src="./image/Close_Icon.svg"
               alt="закрыть"
             />
           </button>
-          <h2 class="popup-photo__edit">Новое место</h2>
+          <h2 class="popup__name">Новое место</h2>
           <fieldset class="form">
             <input
               class="form__input-name input"
@@ -135,7 +143,7 @@
             <span class="form__input-error"></span>
           </fieldset>
           <button
-            class="popup-photo__save-photo"
+            class="popup__save-edit"
             type="submit"
             id="button__save_place"
           >
@@ -145,9 +153,9 @@
       </article>
     </div>
 
-    <div class="popup-location">
+    <div class="popup popup-location">
       <article class="popup-location__container">
-        <button class="popup-location__close" type="button">
+        <button class="button popup__close popup-location__close" type="button">
           <img
             class="popup-location__close-image"
             src="./image/Close_Icon.svg"
