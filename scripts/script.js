@@ -145,8 +145,8 @@ const popupAddCard = document.querySelector(".popup-photo");
 function addNewPhoto(evt) {
   closePopup(popupAddCard);
   evt.preventDefault();
-  const name = document.querySelector(".form__input-name");
-  const link = document.querySelector(".form__input-title");
+  const name = document.querySelector(".form__photo-name");
+  const link = document.querySelector(".form__photo-title");
   const newCard = createCard({ name: name.value, link: link.value });
   containerCard.prepend(newCard);
   name.value = "";

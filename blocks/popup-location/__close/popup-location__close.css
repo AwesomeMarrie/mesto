@@ -1,4 +1,4 @@
-.popup-location__close {
+/*.popup-location__close {
   color: white;
   padding: 0;
   border: none;
@@ -8,7 +8,7 @@
 }
 .popup-location__close:hover {
   opacity: 0.6;
-}
+}*/
 @media screen and (min-width: 320px) {
   .popup-location__close {
     top: -34px;
