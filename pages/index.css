@@ -15,6 +15,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/form/form.css);
+@import url(../blocks/form/__input-type/form__input-type.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/photo/photo.css);
 @import url(../blocks/popup/popup.css);

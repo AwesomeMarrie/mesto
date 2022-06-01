@@ -20,7 +20,7 @@
 @media screen and (min-width: 1280px) {
   .button__disabled {
     width: 358px;
-    margin: 42px 36px 36px 36px;
+    margin: 48px 36px 45px 36px;
     font-size: 18px;
     line-height: 22px;
   }

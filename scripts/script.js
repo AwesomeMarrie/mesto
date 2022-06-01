@@ -15,15 +15,13 @@ function openPopup(popup) {
   popup.classList.add("popup_opened");
   document.addEventListener("keydown", closePopupEscape);
   document.addEventListener("mousedown", closePopupOverlay);
-  saveButtonEdit.classList.add("button__disabled");
-  saveButtonPlace.classList.add("button__disabled");
 }
 
 //close popup
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
   document.removeEventListener("keydown", closePopupEscape);
-  document.removeEventListener("mousedown", closePopupOverlay);
+  popup.removeEventListener("mousedown", closePopupOverlay);
 }
 
 //close popup by esc
@@ -35,25 +33,11 @@ const closePopupEscape = (evt) => {
 };
 
 //close popup by overlay
-const closePopupOverlay = (event) => {
-  if (event.target.classList.contains("card")) {
-    const popupOverlay = document.querySelector(".popup_opened");
-    closePopup(popupOverlay);
+function closePopupOverlay(evt) {
+  if (evt.target.classList.contains("popup")) {
+    closePopup(evt.target);
   }
-  if (event.target.classList.contains("popup")) {
-    const popupOverlay = document.querySelector(".popup_opened");
-    closePopup(popupOverlay);
-  }
-  //if (event.target.classList.contains("popup-photo")) {
-  //const popupOverlay = document.querySelector(".popup_opened");
-  //closePopup(popupOverlay);
-  // }
-  //if (event.target.classList.contains("popup-location")) {
-  //const popupOverlay = document.querySelector(".popup_opened");
-  //closePopup(popupOverlay);
-  //}
-};
-
+}
 //function for opening popup edit and filling form
 function openPopupEditProfile() {
   openPopup(popupProfileEdit);
@@ -103,25 +87,26 @@ function likeCard(like) {
 function createCard(element) {
   //photo and name
   const editCard = templateCard.cloneNode(true);
+  const imageCard = editCard.querySelector(".card__image");
   editCard.querySelector(".card__tile-name").textContent = element.name;
-  editCard.querySelector(".card__image").src = element.link;
-  editCard.querySelector(".card__image").alt = element.name;
+  imageCard.src = element.link;
+  imageCard.alt = element.name;
   //like
-  const likeButton = editCard.querySelector(".card__like-button");
-  likeButton.addEventListener("click", likeCard);
+  const buttonLike = editCard.querySelector(".card__like-button");
+  buttonLike.addEventListener("click", likeCard);
   //delete
-  const delteButton = editCard.querySelector(".card__delete-button");
-  delteButton.addEventListener("click", deleteCard);
+  const buttonDelete = editCard.querySelector(".card__delete-button");
+  buttonDelete.addEventListener("click", deleteCard);
   //open card. big photo
-  const openContainerCard = editCard.querySelector(".card__image");
-  function openBigImage() {
+  const cardElement = imageCard;
+  function openBigImage(element) {
     openPopup(popUpImageContainer);
     popUpImage.src = element.link;
     popUpNameImage.textContent = element.name;
     popUpImage.alt = element.name;
   }
   //open card by click on card
-  openContainerCard.addEventListener("click", openBigImage);
+  cardElement.addEventListener("click", () => openBigImage(element));
 
   return editCard;
 }

@@ -1,64 +1,69 @@
-//validation
-const editProfileForm = document.forms["get-profile"];
-const addPhotoForm = document.forms["get-place"];
-const saveButtonEdit = document.getElementById("button__save_edit");
-const saveButtonPlace = document.getElementById("button__save_place");
+const showInputError = (formElement, inputElement, errorMessage) => {
+  const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+  inputElement.classList.add("form__input-error");
+  errorElement.textContent = errorMessage;
+  errorElement.classList.add("form__input-error_active");
+};
 
-function showError(input, errorMessage) {
-  const fieldset = input.closest(".form");
-  const errorBlock = fieldset.querySelector(".form__input-error");
+const hideInputError = (formElement, inputElement) => {
+  const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+  inputElement.classList.remove("form__input-error");
+  errorElement.classList.remove("form__input-error_active");
+  errorElement.textContent = "";
+};
 
-  errorBlock.textContent = errorMessage;
-  errorBlock.classList.add("form__input-error_active");
-}
+const checkInputValidity = (formElement, inputElement) => {
+  if (!inputElement.validity.valid) {
+    showInputError(formElement, inputElement, inputElement.validationMessage);
+  } else {
+    hideInputError(formElement, inputElement);
+  }
+};
 
-function hideError(input) {
-  const fieldset = input.closest(".form");
-  const errorBlock = fieldset.querySelector(".form__input-error");
+const setListeners = (formElement) => {
+  const inputList = Array.from(formElement.querySelectorAll(".input"));
+  const buttonElement = formElement.querySelector(".popup__save-edit");
+  toggleButtonState(inputList, buttonElement);
+  inputList.forEach((inputElement) => {
+    inputElement.addEventListener("input", function () {
+      checkInputValidity(formElement, inputElement);
+      toggleButtonState(inputList, buttonElement);
+    });
+  });
+};
 
-  errorBlock.textContent = "";
-  errorBlock.classList.remove("form__input-error_active");
-}
+const enableValidation = () => {
+  const formList = Array.from(document.querySelectorAll(".popup__form"));
+  formList.forEach((formElement) => {
+    formElement.addEventListener("submit", (evt) => {
+      evt.preventDefault();
+    });
+    // const fieldsetList = Array.from(formElement.querySelectorAll(".form"));
 
-function enableValidation(form) {
-  const inputs = Array.from(form.querySelectorAll("input"));
+    //fieldsetList.forEach((fieldSet) => {
+    // setEventListeners(fieldSet);
+  });
+};
+enableValidation();
 
-  inputs.forEach((input) => {
-    input.addEventListener("input", () => setInputValidity(input, form));
+function hasInvalidInput(inputList) {
+  return inputList.some((inputElement) => {
+    return !inputElement.validity.valid;
   });
 }
-function checkBlockButton(form) {
-  if (form.checkValidity()) {
-    saveButtonEdit.classList.add("popup__save");
-    saveButtonEdit.classList.remove("button__disabled");
-    saveButtonPlace.classList.add("popup__save");
-    saveButtonPlace.classList.remove("button__disabled");
+
+function toggleButtonState(inputList, buttonElement) {
+  if (hasInvalidInput(inputList)) {
+    buttonElement.classList.add("button__disabled");
   } else {
-    saveButtonEdit.classList.remove("popup__save");
-    saveButtonEdit.classList.add("button__disabled");
-    saveButtonPlace.classList.remove("popup__save");
-    saveButtonPlace.classList.add("button__disabled");
-
-    const inputs = Array.from(form.querySelectorAll("input"));
-
-    inputs.forEach((input) => {
-      setInputValidity(input, form);
-    });
+    buttonElement.classList.remove("button__disabled");
   }
 }
-function setInputValidity(input, form) {
-  hideError(input);
-
-  if (input.validity.typeMismatch) {
-    showError(input, input.validationMessage);
-  }
-  if (input.validity.valueMissing) {
-    showError(input, input.validationMessage);
-  }
-  if (input.validity.tooShort) {
-    showError(input, input.validationMessage);
-  }
-  checkBlockButton(form);
-}
-enableValidation(editProfileForm);
-enableValidation(addPhotoForm);
+enableValidation({
+  formSelector: "popup__form",
+  inputSelector: "input",
+  submitButtonSelector: "popup__save-edit",
+  inactiveButtonClass: "button__disabled",
+  inputErrorClass: "form__input-error",
+  errorClass: "form__input-error_active",
+});
