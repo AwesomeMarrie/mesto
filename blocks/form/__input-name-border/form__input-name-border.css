@@ -1,4 +1,4 @@
-.form__input-name_border {
+.form__input-name-border {
   display: none;
   border-top: 1px solid #ff0000;
   position: absolute;
@@ -10,7 +10,7 @@
   margin: -1px 33px 3px 39px;
 }
 @media screen and (min-width: 320px) {
-  .form__input-name_border {
+  .form__input-name-border {
     width: 241px;
     margin-left: 22px;
     top: 125px;
@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .form__input-name_border {
+  .form__input-name-border {
     width: 363px;
     margin-left: 38px;
     top: 130px;
