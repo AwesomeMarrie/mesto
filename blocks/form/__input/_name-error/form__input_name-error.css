@@ -1,0 +1,18 @@
+.form__input_name-error {
+  position: relative;
+  margin: 0;
+  margin-left: 22px;
+}
+@media screen and (min-width: 320px) {
+  .form__input_name-error {
+    width: 238px;
+    margin: 17px 22px 26px 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form__input_name-error {
+    width: 358px;
+    margin-left: 38px;
+  }
+}
