@@ -1,4 +1,4 @@
-.form__input-error {
+.form__input_type-error {
   position: relative;
   /*font-weight: 400;
   font-size: 12px;
@@ -8,15 +8,16 @@
   margin-left: 22px;
 }
 @media screen and (min-width: 320px) {
-  .form__input-error {
+  .form__input_type {
     width: 238px;
-    margin: 17px 22px 26px 22px;
+    top: -10px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .form__input-error {
+  .form__input_type {
     width: 358px;
+    top: -5px;
     margin-left: 38px;
   }
 }

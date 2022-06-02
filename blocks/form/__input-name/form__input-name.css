@@ -11,13 +11,13 @@
 @media screen and (min-width: 320px) {
   .form__input-name {
     width: 238px;
-    margin: 14px 22px 9px 22px;
+    margin: 14px 22px 26px 22px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .form__input-name {
     width: 358px;
-    margin: 19px 37px 4px 36px;
+    margin: 17px 45px 26px 37px;
   }
 }

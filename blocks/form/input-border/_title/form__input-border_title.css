@@ -1,0 +1,26 @@
+.form__input-border_title {
+  display: none;
+  border-top: 1px solid #ff0000;
+  position: absolute;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  margin: 0;
+  margin: 0x 33px 3px 39px;
+}
+@media screen and (min-width: 320px) {
+  .form__input-border_title {
+    width: 241px;
+    margin-left: 22px;
+    top: 199px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form__input-border_title {
+    width: 363px;
+    margin-left: 38px;
+    top: 204px;
+  }
+}
