@@ -7,8 +7,8 @@ const buttonClosePopup = document.querySelector(".popup__close");
 const userName = document.querySelector(".profile__info-name");
 const userInfo = document.querySelector(".profile__info-about");
 const popupProfileEdit = document.querySelector(".popup");
-const nameChange = document.querySelector(".form__input_name");
-const infoChange = document.querySelector(".form__input_title");
+const nameChange = document.querySelector(".form__input-name");
+const infoChange = document.querySelector(".form__input-title");
 
 //open popup
 function openPopup(popup) {
