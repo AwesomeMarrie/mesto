@@ -76,7 +76,7 @@
           <h2 class="popup__name">Редактировать профиль</h2>
           <fieldset class="form">
             <input
-              class="form__input-name input"
+              class="form__input_name input"
               type="text"
               name="name"
               placeholder="Имя"
@@ -85,21 +85,21 @@
               id="form__input_name"
               required
             />
-            <span class="form__input_name-error form__input-border_name"></span>
+            <span class="form__input_name-error form__input_name-border"></span>
           </fieldset>
           <fieldset class="form">
             <input
-              class="form__input-title input"
+              class="form__input_title input"
               type="text"
               name="info"
               placeholder="Профессия"
               minlength="2"
               maxlength="200"
-              id="form__input_prof"
+              id="form__input_title"
               required
             />
             <span
-              class="form__input_prof-error form__input-border_title"
+              class="form__input_title-error form__input_title-border"
             ></span>
           </fieldset>
           <button class="popup__save-edit" type="submit" id="button__save_edit">
@@ -126,7 +126,7 @@
           <h2 class="popup__name">Новое место</h2>
           <fieldset class="form">
             <input
-              class="form__input-name form__photo-name input"
+              class="form__input_name form__photo-name input"
               type="text"
               name="name"
               placeholder="Название"
@@ -136,12 +136,12 @@
               required
             />
             <span
-              class="form__input_place-error form__input-border_name"
+              class="form__input_place-error form__input_name-border"
             ></span>
           </fieldset>
           <fieldset class="form">
             <input
-              class="form__input-title form__photo-title input"
+              class="form__input_title form__photo-title input"
               type="url"
               name="info"
               placeholder="Ссылка на картинку"
@@ -149,11 +149,11 @@
               required
             />
             <span
-              class="form__input_link-error form__input-border_title"
+              class="form__input_link-error form__input_title-border"
             ></span>
           </fieldset>
           <button
-            class="popup__save-edit button__disabled"
+            class="popup__save-edit"
             type="submit"
             id="button__save_place"
           >

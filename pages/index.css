@@ -14,7 +14,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/form/form.css);
-@import url(../blocks/form/__input/_prof-error/form__input_prof-error.css);
+@import url(../blocks/form/__input/_title-error/form__input_title-error.css);
 @import url(../blocks/form/__input/_place-error/form__input_place-error.css);
 @import url(../blocks/form/__input/_link-error/form__input_link-error.css);
 @import url(../blocks/page/page.css);
@@ -31,12 +31,12 @@
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__name/popup__name.css);
-@import url(../blocks/form/__input-name/form__input-name.css);
-@import url(../blocks/form/__input-title/form__input-title.css);
+@import url(../blocks/form/__input/_name/form__input_name.css);
+@import url(../blocks/form/__input/_title/form__input_title.css);
 @import url(../blocks/popup-photo/__save-photo/popup-photo__save-photo.css);
 @import url(../blocks/form/__input/_name-error/form__input_name-error.css);
-@import url(../blocks/form/input-border/_name/form__input-border_name.css);
-@import url(../blocks/form/input-border/_title/form__input-border_title.css);
+@import url(../blocks/form/__input/_name-border/form__input_name-border.css);
+@import url(../blocks/form/__input/_title-border/form__input_title-border.css);
 @import url(../blocks/form/__input-error/_active/form__input-error_active.css);
 @import url(../blocks/popup/__save-edit/popup__save-edit.css);
 @import url(../blocks/popup/__save/popup__save.css);
