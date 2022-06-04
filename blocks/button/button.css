@@ -1,6 +1,6 @@
 .button {
-    border: 0;
+  border: 0;
 }
 .button:hover {
-    opacity: 60%;
+  opacity: 60%;
 }
