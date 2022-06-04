@@ -74,7 +74,7 @@ const popUpImage = document.querySelector(".popup-location__photo");
 const popUpNameImage = document.querySelector(".popup-location__name");
 const popUpImageClose = document.querySelector(".popup-location__close");
 const name = document.querySelector(".form__input-place");
-const link = document.querySelector(".form__photo-link");
+const link = document.querySelector(".form__input-link");
 
 //function for deleting card
 function deleteCard(del) {
