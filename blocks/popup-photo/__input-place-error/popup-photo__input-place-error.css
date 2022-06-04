@@ -1,19 +1,18 @@
-.form__input-link-error {
+.popup-photo__input-place-error {
   position: relative;
   margin: 0;
   margin-left: 22px;
 }
 @media screen and (min-width: 320px) {
-  .form__input-link-error {
+  .popup-photo__input-place-error {
     width: 238px;
-    top: -10px;
+    margin: 17px 22px 26px 22px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .form__input-link-error {
+  .popup-photo__input-place-error {
     width: 358px;
-    top: -5px;
     margin-left: 38px;
   }
 }

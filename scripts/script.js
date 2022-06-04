@@ -7,8 +7,8 @@ const buttonClosePopup = document.querySelector(".popup__close");
 const userName = document.querySelector(".profile__info-name");
 const userInfo = document.querySelector(".profile__info-about");
 const popupProfileEdit = document.querySelector(".popup-edit");
-const nameChange = document.querySelector(".form__input-name");
-const infoChange = document.querySelector(".form__input-title");
+const nameChange = document.querySelector(".popup__input-name");
+const infoChange = document.querySelector(".popup__input-title");
 
 //open popup
 function openPopup(popup) {
@@ -73,8 +73,8 @@ const popUpImageContainer = document.querySelector(".popup-location");
 const popUpImage = document.querySelector(".popup-location__photo");
 const popUpNameImage = document.querySelector(".popup-location__name");
 const popUpImageClose = document.querySelector(".popup-location__close");
-const name = document.querySelector(".form__input-place");
-const link = document.querySelector(".form__input-link");
+const name = document.querySelector(".popup-photo__input-place");
+const link = document.querySelector(".popup-photo__input-link");
 
 //function for deleting card
 function deleteCard(del) {

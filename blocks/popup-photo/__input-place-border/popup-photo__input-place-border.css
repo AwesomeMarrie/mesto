@@ -1,4 +1,4 @@
-.form__input-link-border {
+.popup-photo__input-place-border {
   display: none;
   position: absolute;
   font-weight: 400;
@@ -6,20 +6,20 @@
   line-height: 15px;
   color: #ff0000;
   margin: 0;
-  margin: 0 33px 3px 39px;
+  margin: -1px 33px 3px 39px;
 }
 @media screen and (min-width: 320px) {
-  .form__input-link-border {
+  .popup-photo__input-place-border {
     width: 241px;
     margin-left: 22px;
-    top: 199px;
+    top: 125px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .form__input-link-border {
+  .popup-photo__input-place-border {
     width: 363px;
     margin-left: 38px;
-    top: 204px;
+    top: 142px;
   }
 }
