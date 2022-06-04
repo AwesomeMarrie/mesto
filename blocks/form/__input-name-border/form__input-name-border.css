@@ -1,6 +1,5 @@
 .form__input-name-border {
   display: none;
-  border-top: 1px solid #ff0000;
   position: absolute;
   font-weight: 400;
   font-size: 12px;
@@ -21,6 +20,6 @@
   .form__input-name-border {
     width: 363px;
     margin-left: 38px;
-    top: 130px;
+    top: 142px;
   }
 }

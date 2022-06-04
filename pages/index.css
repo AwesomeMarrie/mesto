@@ -1,7 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/font/inter.css);
 @import url(../blocks/button/button.css);
-@import url(../blocks/button/__disabled/button__disabled.css);
 @import url(../blocks/card/__tile-name/card__tile-name.css);
 @import url(../blocks/card/__tile/card__tile.css);
 @import url(../blocks/card/__like-button/card__like-button.css);
@@ -37,8 +36,10 @@
 @import url(../blocks/form/__input-name-error/form__input-name-error.css);
 @import url(../blocks/form/__input-name-border/form__input-name-border.css);
 @import url(../blocks/form/__input-title-border/form__input-title-border.css);
+@import url(../blocks/form/__input-error/form__input-error.css);
 @import url(../blocks/form/__input-error/_active/form__input-error_active.css);
 @import url(../blocks/popup/__save-edit/popup__save-edit.css);
+@import url(../blocks/button/__disabled/button__disabled.css);
 @import url(../blocks/popup/__save/popup__save.css);
 @import url(../blocks/popup-photo/__close-image/popup-photo__close-image.css);
 @import url(../blocks/popup-photo/__container/popup-photo__container.css);

@@ -3,11 +3,9 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  margin: auto;
   color: #ffffff;
-  position: absolute;
 }
-@media screen and (min-width: 320px) {
+/*@media screen and (min-width: 320px) {
   .popup-location__name {
     top: 325px;
     left: 0px;
@@ -24,4 +22,4 @@
     bottom: 0;
     right: 0;
   }
-}
+}*/

@@ -1,7 +1,8 @@
 .button__disabled {
-  opacity: 20%;
   align-self: center;
-  border: 1px rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+  color: rgba(0, 0, 0, 0.2);
   padding: 14px 0;
   border-radius: 2px;
   text-align: center;
@@ -20,7 +21,7 @@
 @media screen and (min-width: 1280px) {
   .button__disabled {
     width: 358px;
-    margin: 48px 36px 45px 36px;
+    margin: 42px 36px 36px 36px;
     font-size: 18px;
     line-height: 22px;
   }

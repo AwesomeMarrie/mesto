@@ -59,7 +59,7 @@
       <p class="footer__text">©2022 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup popup-edit">
       <article class="popup__container">
         <form
           class="popup__form popup__container-form"
@@ -124,34 +124,26 @@
             />
           </button>
           <h2 class="popup__name">Новое место</h2>
-          <fieldset class="form">
-            <input
-              class="form__input-name form__photo-name input"
-              type="text"
-              name="name"
-              placeholder="Название"
-              minlength="2"
-              maxlength="30"
-              id="form__input-place"
-              required
-            />
-            <span
-              class="form__input-place-error form__input-name-border"
-            ></span>
-          </fieldset>
-          <fieldset class="form">
-            <input
-              class="form__input-title form__photo-title input"
-              type="url"
-              name="info"
-              placeholder="Ссылка на картинку"
-              id="form__input-link"
-              required
-            />
-            <span
-              class="form__input-link-error form__input-title-border"
-            ></span>
-          </fieldset>
+          <input
+            class="form__input-name form__photo-name input"
+            type="text"
+            name="name"
+            placeholder="Название"
+            minlength="2"
+            maxlength="30"
+            id="form__input-place"
+            required
+          />
+          <span class="form__input-place-error form__input-name-border"></span>
+          <input
+            class="form__input-title form__photo-title input"
+            type="url"
+            name="info"
+            placeholder="Ссылка на картинку"
+            id="form__input-link"
+            required
+          />
+          <span class="form__input-link-error form__input-title-border"></span>
           <button
             class="popup__save-edit"
             type="submit"
@@ -173,7 +165,7 @@
           />
         </button>
         <img class="popup-location__photo" alt="фото" src="#" />
-        <figcaption class="popup-location__name"></figcaption>
+        <p class="popup-location__name"></p>
       </article>
     </div>
     <script src="./scripts/cards.js"></script>
