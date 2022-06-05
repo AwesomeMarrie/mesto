@@ -139,8 +139,9 @@ function addNewPhoto(evt) {
   containerCard.prepend(newCard);
   name.value = "";
   link.value = "";
-  //saveButtonActive.classList.add("button__disabled");
 }
+
+//setAttribute & removeAttribute in validate.js
 
 formAddCard.addEventListener("submit", addNewPhoto);
 buttonOpenPopupAddCard.addEventListener("click", function openPhoto() {
