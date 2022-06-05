@@ -13,7 +13,6 @@ const infoChange = document.querySelector(".popup__input-title");
 //open popup
 function openPopup(popup) {
   popup.classList.add("popup_opened");
-  popup.querySelector("button__disabled");
   document.addEventListener("keydown", closePopupEscape);
   popup.addEventListener("mousedown", closePopupOverlay);
 }
@@ -140,12 +139,12 @@ function addNewPhoto(evt) {
   containerCard.prepend(newCard);
   name.value = "";
   link.value = "";
+  //saveButtonActive.classList.add("button__disabled");
 }
 
 formAddCard.addEventListener("submit", addNewPhoto);
 buttonOpenPopupAddCard.addEventListener("click", function openPhoto() {
   openPopup(popupAddCard);
-  saveButtonActive.classList.add("button__disabled");
 });
 
 buttonClosePopupAddCard.addEventListener("click", function () {
