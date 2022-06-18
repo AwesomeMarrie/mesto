@@ -27,7 +27,7 @@ const buttonOpenPopupAddCard = document.querySelector(".profile__add");
 const formAddCard = document.querySelector(".popup-photo__container-form");
 const buttonClosePopupAddCard = document.querySelector(".popup-photo__close");
 const popupAddCard = document.querySelector(".popup-photo");
-const saveButtonActive = document.getElementById("button__save_place");
+// const saveButtonActive = document.getElementById("button__save_place");
 //validation
 const config = {
   formSelector: "popup__form",
@@ -113,7 +113,7 @@ function addNewPhoto(evt) {
   containerCard.prepend(newCard);
   name.value = "";
   link.value = "";
-  saveButtonActive.classList.add("button__disabled");
+  // saveButtonActive.classList.add("button__disabled");
 }
 
 formAddCard.addEventListener("submit", addNewPhoto);

@@ -6,15 +6,15 @@ import {
 } from "./script.js";
 
 export class Card {
-  constructor(element, card, openBigImage) {
+  constructor(element, cardTemplate) {
     this._name = element.name;
     this._link = element.link;
-    this._card = card;
+    this._cardTemplate = cardTemplate;
   }
 
   _getTemplate() {
     const elementCard = document
-      .querySelector(this._card)
+      .querySelector(this._cardTemplate)
       .content.querySelector(".card")
       .cloneNode(true);
     return elementCard;
@@ -31,7 +31,7 @@ export class Card {
     this._likeButton.classList.toggle("card__like-button_active");
   }
   _deleteCard() {
-    this._elementCard.remove();
+    this._elementCard = null;
   }
   _setEventListeners() {
     this._likeButton.addEventListener("click", () => {
@@ -40,20 +40,19 @@ export class Card {
     this._buttonDelete.addEventListener("click", () => {
       this._deleteCard();
     });
-    this._elementCard
-      .querySelector(".card__image")
-      .addEventListener("click", () => {
-        this._openBigImage();
-      });
+    this._elementCard.addEventListener("click", () => {
+      this._openBigImage();
+    });
   }
 
   addCard() {
     this._elementCard = this._getTemplate();
-    this._cardTitle = this._elementCard.querySelector(
-      ".card__tile-name"
-    ).textContent = this._name;
-    this._cardImage = this._elementCard.querySelector(".card__image").src =
-      this._link;
+    this._cardImage = this._elementCard.querySelector(".card__image");
+    this._elementCard.querySelector(".card__tile-name").textContent =
+      this._name;
+    this._cardImage.alt = this._name;
+    this._cardImage.src = this._link;
+
     this._buttonDelete = this._elementCard.querySelector(
       ".card__delete-button"
     );

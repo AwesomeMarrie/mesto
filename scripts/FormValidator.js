@@ -1,6 +1,7 @@
 export class FormValidator {
   constructor(configValidation, formElement) {
     this._formElement = formElement;
+    this._configValidation = configValidation;
     this._inputSelector = configValidation.inputSelector;
     this._submitButtonSelector = configValidation.submitButtonSelector;
     this._inactiveButtonClass = configValidation.inactiveButtonClass;
@@ -15,14 +16,22 @@ export class FormValidator {
   }
 
   enableValidation() {
+    this._formElement.addEventListener("submit", (evt) => {
+      evt.preventDefault();
+      this._buttonElement.classList.add(
+        this._configValidation.inactiveButtonClass
+      );
+      this._buttonElement.setAttribute("disabled", true);
+    });
     this._setEventListener();
   }
 
   _setEventListener() {
+    this._toggleButtonState();
     this._inputList.forEach((inputElement) => {
       inputElement.addEventListener("input", () => {
         this._checkInputValidity(inputElement);
-        this._toggleButtonState(this._inputList);
+        this._toggleButtonState();
       });
     });
   }
@@ -60,12 +69,16 @@ export class FormValidator {
   };
 
   _toggleButtonState = () => {
-    if (this._hasInvalidInput(this._inputList)) {
-      this._buttonElement.classList.add(this._inactiveButtonClass);
-      this._buttonElement.setAttribute("disabled", "");
+    if (this._hasInvalidInput()) {
+      this._buttonElement.classList.add(
+        this._configValidation.inactiveButtonClass
+      );
+      this._buttonElement.setAttribute("disabled", true);
     } else {
-      this._buttonElement.classList.remove(this._inactiveButtonClass);
-      this._buttonElement.removeAttribute("disabled");
+      this._buttonElement.classList.remove(
+        this._configValidation.inactiveButtonClass
+      );
+      this._buttonElement.removeAttribute("disabled", true);
     }
   };
 
