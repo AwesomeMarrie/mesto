@@ -27,7 +27,6 @@ const buttonOpenPopupAddCard = document.querySelector(".profile__add");
 const formAddCard = document.querySelector(".popup-photo__container-form");
 const buttonClosePopupAddCard = document.querySelector(".popup-photo__close");
 const popupAddCard = document.querySelector(".popup-photo");
-// const saveButtonActive = document.getElementById("button__save_place");
 //validation
 const config = {
   formSelector: "popup__form",
@@ -62,6 +61,7 @@ function closePopupOverlay(evt) {
     closePopup(evt.target);
   }
 }
+
 //function for opening popup edit and filling form
 function openPopupEditProfile() {
   openPopup(popupProfileEdit);
@@ -83,6 +83,7 @@ function handleProfileEditFormSubmit(evt) {
   userInfo.textContent = infoChange.value;
   closePopup(popupProfileEdit);
   evt.preventDefault();
+  validatorFormTypeEdit.disableButton();
 }
 
 //save change
@@ -113,7 +114,7 @@ function addNewPhoto(evt) {
   containerCard.prepend(newCard);
   name.value = "";
   link.value = "";
-  // saveButtonActive.classList.add("button__disabled");
+  validatorFormTypeAdd.disableButton();
 }
 
 formAddCard.addEventListener("submit", addNewPhoto);
