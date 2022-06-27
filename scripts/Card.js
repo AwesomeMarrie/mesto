@@ -3,7 +3,7 @@ import {
   popUpImage,
   popUpNameImage,
   popUpImageContainer,
-} from "./script.js";
+} from "./index.js";
 
 export class Card {
   constructor(element, cardTemplate) {
